@@ -19,5 +19,5 @@ export function createApp() {
   app.use(notFound);
   app.use(errorHandler);
 
-  return app
+  return app;
 }
