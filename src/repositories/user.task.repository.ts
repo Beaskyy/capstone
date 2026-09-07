@@ -4,9 +4,9 @@ export const createTask = async (
   userId: string,
   title: unknown,
 ): Promise<void> => {
-const result = await pool.query(
+  const result = await pool.query(
     `
-    INSERT INTO tasks (user_id, title) 
+    INSERT INTO support_tasks (user_id, title)
     VALUES ($1, $2) 
     RETURNING id, title, status, user_id, created_at, updated_at
     `,
