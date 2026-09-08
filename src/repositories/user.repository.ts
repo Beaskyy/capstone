@@ -34,5 +34,5 @@ export const findUserByEmailWithPassword = async (
     [email],
   );
 
-  return result.rows[0] ?? null;
+  return result.rows[0] ?? null
 }
